@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="./src/css/styles.css" />
+    <link rel="shortcut icon" href="./src/assets/favicon.ico" type="image/x-icon" />
+    <title>MAD'Smokin - Ödeme Sayfası</title>
+  </head>
+  
+  <body>
+    <div class="header_cubugu">🛒 500TL Üzeri Alışverinizde Ücretsiz Kargo!</div>
+    <nav class="section_container navigasyon_container">
+      <a href="./index.html" class="navigasyon_logo">
+        <img src="src/assets/logo/navbar-logo.png" alt="MAD'Smokin Logo" class="navigasyon-logo">
+      </a>      
+      <ul class="navigasyon-linkler">
+        <li class="link"><a href="./index.html">Anasayfa</a></li>
+        <li class="link"><a href="./hakkimizda.html">Hakkımızda</a></li>
+        <li class="link asagi-acilir">
+          <a href="./kategoriler.html">Kategoriler <i class="ri-arrow-down-s-line"></i></a>
+          <ul class="asagi-acilir-menu">
+            <li><a href="./kategori/kemer-aksesuar.html">Kemer & Aksesuar</a></li>
+            <li><a href="./kategori/takim-elbise.html">Takım Elbise</a></li>
+            <li><a href="./kategori/pantolon.html">Pantolon</a></li>
+            <li><a href="./kategori/ayakkabi.html">Ayakkabı</a></li>
+            <li><a href="./kategori/gomlek.html">Gömlek</a></li>
+            <li><a href="./kategori/ceket.html">Ceket</a></li>
+
+          </ul>
+        </li>
+        <li class="link"><a href="./kargo-takip.html">Kargo Takip</a></li>
+        <li class="link"><a href="./iletisim.html">İletişim</a></li>
+      </ul>
+      <div class="navigasyon_ikonlar">
+        <span><a href="./hesabim.html"><i class="ri-shield-user-line"></i></a></span>
+        <span><a href="./arama.html"><i class="ri-search-line"></i></a></span>
+        <span><a href="./istek-listesi.html"><i class="ri-heart-add-line"></i></a></span>
+        <span><a href="./sepet.html"><i class="ri-shopping-bag-2-line"></i></a></span>
+      </div>
+    </nav>
+  
+<hr />
+
+
+<div class="odeme-sayfasi">
+    <div class="sepet-ozeti">
+        <h1>Sepet Özeti</h1>
+        <table class="sepet-tablosu">
+            <thead>
+                <tr>
+                    <th>Ürün Görseli</th>
+                    <th>Ürün Adı</th>
+                    <th>Adet</th>
+                    <th>Fiyat</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="urun-detay">
+                            <img src="./src/assets/product/new-products/newproducts-1.jpg" alt="ödeme_ürün_1">
+                        </div>
+                    </td>
+                    <td>AltınYıldız - İtalyan Stil Kruvaze Ceket</td>
+                    <td>1</td>
+                    <td>₺1.990,0</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="urun-detay">
+                            <img src="./src/assets/product/new-products/newproducts-2.jpg" alt="ödeme_ürün_2">
+                        </div>
+                    </td>
+                    <td>Terzi Ayhan Classics - Çift Dikiş Siyah Kumaş Pantolon</td>
+                    <td>1</td>
+                    <td>₺1.099,9</td>
+                </tr>
+                <tr>
+                  <td>
+                      <div class="urun-detay">
+                          <img src="./src/assets/product/new-products/newproducts-2.jpg" alt="ödeme_ürün_2">
+                      </div>
+                  </td>
+                  <td>Süvari - Köşeli Manşet Slim Fit Gömlek</td>
+                  <td>1</td>
+                  <td>₺799,9</td>
+              </tr>
+            </tbody>
+        </table>
+        <div class="sepet-toplam">
+            <h3>Katma Değer Vergisi (KDV): ₺799,76</h3>
+            <h3>Kargo Ücreti: <del>₺99,99</del> ₺0.00</h3>
+            <h3>Toplam: ₺4798,5</h3>
+        </div>
+    </div>
+    <div class="odeme-container">
+      <h1>Adres ve İletişim Bilgileri</h1>
+      <form action="./odeme-onay.html" method="post">
+          <label for="ad-soyad">Ad Soyad:</label>
+          <input type="text" id="ad-soyad" name="ad-soyad" placeholder="Adınızı ve soyadınızı giriniz" required>
+          
+          <label for="adres">Adres:</label>
+          <input type="text" id="adres" name="adres" placeholder="Adresinizi giriniz" required>
+          
+          <label for="sehir">Şehir:</label>
+          <input type="text" id="sehir" name="sehir" placeholder="Şehrinizi giriniz" required>
+          
+          <label for="posta-kodu">Posta Kodu:</label>
+          <input type="text" id="posta-kodu" name="posta-kodu" placeholder="Posta kodunu giriniz" required>
+          
+          <label for="telefon">Telefon Numarası:</label>
+          <input type="tel" id="telefon" name="telefon" value="+90 5" maxlength="14" placeholder="Telefon numaranızı giriniz" required>
+          
+          <h1>Ödeme Bilgileri</h1>
+          <label for="kart-isim">Kart Üzerindeki İsim:</label>
+          <input type="text" id="kart-isim" name="kart-isim" placeholder="Kart üzerindeki ismi giriniz" required>
+          
+          <label for="kart-numarasi">Kart Numarası:</label>
+          <input type="cc-number" id="kart-numarasi" name="kart-numarasi" maxlength="16" placeholder="Kart numarasını giriniz" required>
+          
+          <label for="son-kullanma-tarihi">Son Kullanma Tarihi:</label>
+          <input type="month" id="son-kullanma-tarihi" name="son-kullanma-tarihi" required>
+          
+          <label for="cvv">CVV:</label>
+          <input type="text" id="cvv" name="cvv" maxlength="3" placeholder="CVV kodunu giriniz." required>
+        
+          <button type="submit" class="btn-odeme">Ödemeyi Tamamla</button>
+        </form>
+        <div class="guvenli-alisveris">
+            <img src="./src/assets/payment/payment-security.png" alt="Güvenli Alışveriş">
+        </div>
+    </div>
+</div>
+
+<hr />
+<footer class="section_container footer_container">
+  <div class="footer_sutun">
+    <h4 class="footer_baslik">İLETİŞİM BİLGİLERİ</h4>
+    <p>
+      <i class="ri-map-pin-2-fill"></i> Ortaköy, Beşiktaş, İstanbul
+    </p>
+    <p><a href="mailto:iletisim@madsmokin.com"><i class="ri-mail-fill"></i> iletisim@madsmokin.com</a></p>
+    <p><a href="tel:+905437891563"><i class="ri-phone-fill"></i> 0(543) 789 1563</a></p>
+  </div>
+  <div class="footer_sutun">
+    <h4 class="footer_baslik">MAD'Smokin</h4>
+    <p><a href="./index.html">Anasayfa</a></p>
+    <p><a href="./hakkimizda.html">Hakkımızda</a></p>
+    <p><a href="./kategoriler.html">Kategoriler</a></p>
+    <p><a href="./kargo-takip.html">Kargo Takip</a></p>
+    <p><a href="./iletisim.html">İletişim</a></p>
+  </div>
+  <div class="footer_sutun">
+    <h4 class="footer_baslik">KATEGORİLER</h4>
+    <p><a href="./kategori/takim-elbise.html">Takım Elbise</a></p>
+    <p><a href="./kategori/gomlek.html">Gömlek</a></p>
+    <p><a href="./kategori/ceket.html">Ceket</a></p>
+    <p><a href="./kategori/pantolon.html">Pantolon</a></p>
+    <p><a href="./kategoriler.html">Tüm Kategoriler</a></p>
+  </div>
+  <div class="footer_sutun">
+    <h4 class="footer_baslik">YASAL</h4>
+    <p><a href="./yasal/Mesafeli-satis-sozlesmesi.html">Mesafeli Satış Sözleşmesi</a></p>
+    <p><a href="./yasal/gizlilik-kvkk-bilgileri.html">Gizlilik ve KVKK Bilgileri</a></p>
+    <p><a href="./yasal/degisim-iade-kosullari.html">Değişim ve İade Koşulları</a></p>
+    <p><a href="./yasal/kargo-teslimat-bilgileri.html">Kargo ve Teslimat Bilgileri</a></p>
+  </div>
+</footer>
+
+<hr />
+
+<div class="section_container footer_cubugu">
+  <div class="telifhakki">
+    Copyright © 2024 <a href="./index.html">madsmokin.com</a> - Tüm Hakları Saklıdır. 
+  </div>
+  <div class="footer_doldur">
+    <form>
+      <input type="text" placeholder="E-Posta adresinizi giriniz." />
+      <button class="btn" type="submit">Gönder</button>
+    </form>
+  </div>
+</div>
+</body>
+</html>

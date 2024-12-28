@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="./src/css/styles.css" />
+    <link rel="shortcut icon" href="./src/assets/favicon.ico" type="image/x-icon" />
+    <title>MAD'Smokin - Hesabım</title>
+  </head>
+  
+  <body>
+    <div class="header_cubugu">🛒 500TL Üzeri Alışverinizde Ücretsiz Kargo!</div>
+    <nav class="section_container navigasyon_container">
+      <a href="./index.html" class="navigasyon_logo">
+        <img src="src/assets/logo/navbar-logo.png" alt="MAD'Smokin Logo" class="navigasyon-logo">
+      </a>      
+      <ul class="navigasyon-linkler">
+        <li class="link"><a href="./index.html">Anasayfa</a></li>
+        <li class="link"><a href="./hakkimizda.html">Hakkımızda</a></li>
+        <li class="link asagi-acilir">
+          <a href="./kategoriler.html">Kategoriler <i class="ri-arrow-down-s-line"></i></a>
+          <ul class="asagi-acilir-menu">
+            <li><a href="./kategori/kemer-aksesuar.html">Kemer & Aksesuar</a></li>
+            <li><a href="./kategori/takim-elbise.html">Takım Elbise</a></li>
+            <li><a href="./kategori/pantolon.html">Pantolon</a></li>
+            <li><a href="./kategori/ayakkabi.html">Ayakkabı</a></li>
+            <li><a href="./kategori/gomlek.html">Gömlek</a></li>
+            <li><a href="./kategori/ceket.html">Ceket</a></li>
+
+          </ul>
+        </li>
+        <li class="link"><a href="./kargo-takip.html">Kargo Takip</a></li>
+        <li class="link"><a href="./iletisim.html">İletişim</a></li>
+      </ul>
+      <div class="navigasyon_ikonlar">
+        <span><a href="./hesabim.html"><i class="ri-shield-user-line"></i></a></span>
+        <span><a href="./arama.html"><i class="ri-search-line"></i></a></span>
+        <span><a href="./istek-listesi.html"><i class="ri-heart-add-line"></i></a></span>
+        <span><a href="./sepet.html"><i class="ri-shopping-bag-2-line"></i></a></span>
+      </div>
+    </nav>
+  
+<hr />
+
+<div class="hesabim-container">
+  <!-- Sol Menü -->
+  <div class="sol-menu">
+    <ul>
+      <li><a href="#siparislerim">Siparişlerim</a></li>
+      <li><a href="#profil-bilgilerim">Profil Bilgilerim</a></li>
+      <li><a href="#adres-bilgilerim">Adres Bilgilerim</a></li>
+      <li><a href="#odeme-yontemlerim">Ödeme Yöntemlerim</a></li>
+      <li><a href="#sifre-guvenlik">Şifre ve Güvenlik</a></li>
+      <li><a href="#kuponlarim">Kuponlarım</a></li>
+    </ul>
+  </div>
+
+  <!-- İçerik -->
+  <div class="icerik">
+
+    <h1 align="center">HESAP AYARLARI</h1>
+    <p align="center">Hesap ayarlarınızı sekmeler aracılığıyla değiştirebilirsiniz.</p>
+    <!-- Siparişlerim -->
+    <div id="siparislerim" class="tab-content">
+      <h2>Siparişlerim</h2>
+      <div class="siparis">
+        <div class="siparis-detaylar">
+          <p><strong>Sipariş No:</strong> #SPRS133740</p>
+          <p><strong>Tarih:</strong> 14/12/2024</p>
+          <p><strong>Tutar:</strong> 2.499 TL</p>
+          <p><strong>Durum:</strong> <span class="durum">Hazırlanıyor</span></p>
+        </div>
+        <button class="detay-btn">Sipariş Detayları</button>
+      </div>
+      <div class="siparis">
+        <div class="siparis-detaylar">
+          <p><strong>Sipariş No:</strong> #SPRS133721</p>
+          <p><strong>Tarih:</strong> 09/12/2024</p>
+          <p><strong>Tutar:</strong> 6.299 TL</p>
+          <p><strong>Durum:</strong> <span class="durum">Teslim Edildi</span></p>
+        </div>
+        <button class="detay-btn">Sipariş Detayları</button>
+      </div>
+    </div>
+
+    <!-- Profil Bilgilerim -->
+    <div id="profil-bilgilerim" class="tab-content">
+      <h2>Profil Bilgilerim</h2>
+      <form class="profil-form">
+        <label for="ad">Ad:</label>
+        <input type="text" id="ad" name="ad" placeholder="Adınızı giriniz" value="Mustafa Arda">
+        
+        <label for="soyad">Soyad:</label>
+        <input type="text" id="soyad" name="soyad" placeholder="Soyadınızı giriniz" value="Düşova">
+        
+        <label for="email">E-Posta:</label>
+        <input type="email" id="email" name="email" placeholder="E-posta adresinizi giriniz" value="info@mdusova.com">
+        
+        <label for="telefon">Telefon:</label>
+        <input type="tel" id="telefon" name="telefon" placeholder="Telefon numaranızı giriniz" value="0543 789 15 63">
+        
+        <button type="submit" class="btn-kaydet">Kaydet</button>
+      </form>
+    </div>
+
+    <!-- Adres Bilgilerim -->
+    <div id="adres-bilgilerim" class="tab-content">
+      <h2>Adres Bilgilerim</h2>
+      <form class="profil-form">
+        <label for="adres">Adres:</label>
+        <input type="text" id="adres" name="adres" placeholder="Adresinizi giriniz" value="Ortaköy, Beşiktaş, İstanbul, Türkiye">
+        
+        <label for="posta-kodu">Posta Kodu:</label>
+        <input type="text" id="posta-kodu" name="posta-kodu" placeholder="Posta kodunuzu giriniz" value="34000">
+        
+        <button type="submit" class="btn-kaydet">Kaydet</button>
+      </form>
+    </div>
+
+    <!-- Ödeme Yöntemlerim -->
+    <div id="odeme-yontemlerim" class="tab-content">
+      <h2>Ödeme Yöntemlerim</h2>
+      <form class="profil-form">
+        <label for="kart-numarasi">Kart Numarası:</label>
+        <input type="text" id="kart-numarasi" name="kart-numarasi" placeholder="Kart numaranızı giriniz">
+        
+        <label for="son-kullanma-tarihi">Son Kullanma Tarihi:</label>
+        <input type="month" id="son-kullanma-tarihi" name="son-kullanma-tarihi">
+        
+        <label for="cvv">CVV:</label>
+        <input type="password" id="cvv" name="cvv" placeholder="CVV kodunuzu giriniz">
+        
+        <button type="submit" class="btn-kaydet">Kaydet</button>
+      </form>
+    </div>
+
+    <!-- Şifre ve Güvenlik -->
+    <div id="sifre-guvenlik" class="tab-content">
+      <h2>Şifre ve Güvenlik</h2>
+      <form class="profil-form">
+        <label for="sifre">Mevcut Şifreniz:</label>
+        <input type="password" id="sifre" name="sifre" placeholder="Mevcut şifrenizi giriniz" required>
+
+        <label for="sifre">Yeni Şifre:</label>
+        <input type="password" id="sifre" name="sifre" placeholder="Yeni şifrenizi giriniz" required>
+        
+        <label for="sifre-tekrar">Şifreyi Tekrar Girin:</label>
+        <input type="password" id="sifre-tekrar" name="sifre-tekrar" placeholder="Yeni şifrenizi tekrar giriniz" required>
+        
+        <button type="submit" class="btn-kaydet">Şifreyi Değiştir</button>
+      </form>
+    </div>
+
+    <!-- Kuponlarım -->
+    <div id="kuponlarim" class="tab-content">
+      <h2>Kuponlarım</h2>
+      <div class="kupon-listesi">
+        <div class="kupon">
+          <p><strong>Kupon Kodu:</strong> hsgldn10</p>
+          <p><strong>İndirim:</strong> %10</p>
+          <button class="btn-kaydet">Kopyala</button>
+        </div>
+        <div class="kupon">
+          <p><strong>Kupon Kodu:</strong> yenikyt15</p>
+          <p><strong>İndirim:</strong> %15</p>
+          <button class="btn-kaydet">Kopyala</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<hr />
+<footer class="section_container footer_container">
+  <div class="footer_sutun">
+    <h4 class="footer_baslik">İLETİŞİM BİLGİLERİ</h4>
+    <p>
+      <i class="ri-map-pin-2-fill"></i> Ortaköy, Beşiktaş, İstanbul
+    </p>
+    <p><a href="mailto:iletisim@madsmokin.com"><i class="ri-mail-fill"></i> iletisim@madsmokin.com</a></p>
+    <p><a href="tel:+905437891563"><i class="ri-phone-fill"></i> 0(543) 789 1563</a></p>
+  </div>
+  <div class="footer_sutun">
+    <h4 class="footer_baslik">MAD'Smokin</h4>
+    <p><a href="./index.html">Anasayfa</a></p>
+    <p><a href="./hakkimizda.html">Hakkımızda</a></p>
+    <p><a href="./kategoriler.html">Kategoriler</a></p>
+    <p><a href="./kargo-takip.html">Kargo Takip</a></p>
+    <p><a href="./iletisim.html">İletişim</a></p>
+  </div>
+  <div class="footer_sutun">
+    <h4 class="footer_baslik">KATEGORİLER</h4>
+    <p><a href="./kategori/takim-elbise.html">Takım Elbise</a></p>
+    <p><a href="./kategori/gomlek.html">Gömlek</a></p>
+    <p><a href="./kategori/ceket.html">Ceket</a></p>
+    <p><a href="./kategori/pantolon.html">Pantolon</a></p>
+    <p><a href="./kategoriler.html">Tüm Kategoriler</a></p>
+  </div>
+  <div class="footer_sutun">
+    <h4 class="footer_baslik">YASAL</h4>
+    <p><a href="./yasal/Mesafeli-satis-sozlesmesi.html">Mesafeli Satış Sözleşmesi</a></p>
+    <p><a href="./yasal/gizlilik-kvkk-bilgileri.html">Gizlilik ve KVKK Bilgileri</a></p>
+    <p><a href="./yasal/degisim-iade-kosullari.html">Değişim ve İade Koşulları</a></p>
+    <p><a href="./yasal/kargo-teslimat-bilgileri.html">Kargo ve Teslimat Bilgileri</a></p>
+  </div>
+</footer>
+
+<hr />
+
+<div class="section_container footer_cubugu">
+  <div class="telifhakki">
+    Copyright © 2024 <a href="./index.html">madsmokin.com</a> - Tüm Hakları Saklıdır. 
+  </div>
+  <div class="footer_doldur">
+    <form>
+      <input type="text" placeholder="E-Posta adresinizi giriniz." />
+      <button class="btn" type="submit">Gönder</button>
+    </form>
+  </div>
+</div>
+</body>
+</html>
